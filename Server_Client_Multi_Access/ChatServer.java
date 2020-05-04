@@ -14,7 +14,7 @@ class  ChatServer {
   		 clients.add(c);
      }  // end of while
   }
-  public static void main(String ... args) throws Exception {
+  public static void main(String args[]) throws Exception {
       new ChatServer().process();
   } // end of main
   public void broadcast(String user, String message)  {
@@ -53,12 +53,12 @@ class  ChatServer {
 		   users.remove(name);
 		   break;
                  }
-		 broadcast(name,line); // method  of outer class - send messages to all
+		 broadcast(name,line);
 	       } // end of while
-	     } // try
+	     } 
 	     catch(Exception ex) {
 	       System.out.println(ex.getMessage());
 	     }
-        } // end of run()
-   } // end of inner class
-} // end of Server
+        }
+   }
+} 
