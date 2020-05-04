@@ -58,7 +58,7 @@ class  ChatClient extends JFrame implements ActionListener {
         }
     }
     
-    public static void main(String ... args) {
+    public static void main(String args[]) {
     
         // take username from user
         String name = JOptionPane.showInputDialog(null,"Enter your name :", "Username",
@@ -70,7 +70,7 @@ class  ChatClient extends JFrame implements ActionListener {
             out.println( "Error --> " + ex.getMessage());
         }
         
-    } // end of main
+    }
     
     // inner class for Messages Thread
     class  MessagesThread extends Thread {
@@ -84,4 +84,4 @@ class  ChatClient extends JFrame implements ActionListener {
             } catch(Exception ex) {}
         }
     }
-} //  end of client
+} 
